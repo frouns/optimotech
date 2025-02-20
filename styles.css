@@ -1,0 +1,56 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+header {
+    background-color: #D85F2A;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    color: #ffffff;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+#hero {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #D85F2A, #E39132);
+    color: white;
+}
+.cta-button {
+    display: inline-block;
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+section {
+    padding: 40px;
+}
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+img.logo {
+    display: block;
+    margin: 20px auto;
+    max-width: 150px;
+}
