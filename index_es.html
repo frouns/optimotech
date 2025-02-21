@@ -7,118 +7,26 @@
     <meta name="description" content="OptimoTech revoluciona la productividad con IA y automatización. Optimiza procesos, reduce costos y mejora la eficiencia de tu empresa.">
     <meta name="keywords" content="Inteligencia Artificial, Automatización, Chatbots, Optimización de procesos, IA para empresas">
     <meta name="author" content="OptimoTech">
+    <meta property="og:title" content="OptimoTech - IA & Automatización">
+    <meta property="og:description" content="Descubre cómo la IA puede optimizar tu empresa con OptimoTech. Soluciones avanzadas de automatización y productividad.">
+    <meta property="og:image" content="https://imgur.com/N1xwixs.png">
+    <meta property="og:url" content="https://optimotech.net">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "OptimoTech",
+        "url": "https://optimotech.net",
+        "logo": "https://imgur.com/N1xwixs.png",
+        "sameAs": [
+            "https://linkedin.com/company/optimotech",
+            "https://twitter.com/optimotech"
+        ]
+    }
+    </script>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://imgur.com/N1xwixs.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #0d0d0d;
-            color: #ffffff;
-        }
-        header {
-            position: fixed;
-            width: 100%;
-            top: 0;
-            background: linear-gradient(135deg, #f4f4f4, #ffffff);
-            padding: 20px 0;
-            text-align: center;
-            z-index: 1000;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .language-selector {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-        }
-        .language-selector a {
-            color: #ffcc70;
-            margin: 0 10px;
-            font-weight: bold;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        .language-selector a:hover {
-            color: #E39132;
-        }
-        header img.logo {
-            max-width: 180px;
-            display: block;
-            margin: 0 auto;
-        }
-        nav ul {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            list-style: none;
-        }
-        nav ul li a {
-            color: #ffcc70;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: 700;
-            transition: color 0.3s ease;
-        }
-        nav ul li a:hover {
-            color: #E39132;
-        }
-        #hero {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background: linear-gradient(135deg, #D85F2A, #E39132);
-            text-align: center;
-            padding: 0 20px;
-        }
-        .cta-button {
-            margin-top: 20px;
-            padding: 15px 30px;
-            font-size: 20px;
-            font-weight: bold;
-            color: #000000;
-            background: #ffcc70;
-            border-radius: 50px;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-        .cta-button:hover {
-            background: #E39132;
-            transform: scale(1.1);
-        }
-        #video-section {
-            text-align: center;
-            padding: 50px 20px;
-            background: #1e1e1e;
-        }
-        #video-section iframe {
-            max-width: 800px;
-            width: 100%;
-            height: 450px;
-            border-radius: 10px;
-        }
-        #faq ul {
-            text-align: left;
-            max-width: 800px;
-            margin: auto;
-        }
-        #faq ul li {
-            margin-bottom: 15px;
-            font-size: 18px;
-        }
-        footer {
-            background: #000000;
-            text-align: center;
-            padding: 20px;
-            margin-top: 50px;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -150,8 +58,39 @@
         <iframe src="https://www.youtube.com/embed/tu_video_demo" allowfullscreen></iframe>
     </section>
     
+    <section id="testimonials">
+        <h2>💬 Lo que dicen nuestros clientes</h2>
+        <div class="testimonial-slider">
+            <p>⭐️⭐️⭐️⭐️⭐️ "OptimoTech nos ha ahorrado 12h de trabajo semanal y ha incrementado nuestras ventas un 25%."</p>
+            <p>⭐️⭐️⭐️⭐️⭐️ "Nuestro servicio al cliente es 3 veces más rápido gracias a la IA de OptimoTech."</p>
+        </div>
+    </section>
+    
+    <section id="faq">
+        <h2>❓ Preguntas Frecuentes</h2>
+        <ul>
+            <li><strong>¿Cómo puede la IA mejorar mi negocio?</strong><br>La IA optimiza procesos, reduce costos y mejora la eficiencia operativa.</li>
+            <li><strong>¿OptimoTech se integra con mis herramientas actuales?</strong><br>Sí, nuestras soluciones son compatibles con herramientas como Salesforce, Zapier, HubSpot y más.</li>
+            <li><strong>¿Cuánto tiempo toma implementar una solución IA?</strong><br>Dependiendo del caso, la implementación puede variar entre unos días y unas pocas semanas.</li>
+        </ul>
+    </section>
+    
     <footer>
         <p>&copy; 2025 OptimoTech. Todos los derechos reservados.</p>
     </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const testimonials = document.querySelectorAll(".testimonial-slider p");
+            let index = 0;
+            function rotateTestimonials() {
+                testimonials.forEach(t => t.style.display = "none");
+                testimonials[index].style.display = "block";
+                index = (index + 1) % testimonials.length;
+            }
+            rotateTestimonials();
+            setInterval(rotateTestimonials, 5000);
+        });
+    </script>
 </body>
 </html>
