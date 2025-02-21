@@ -4,7 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OptimoTech - IA & Automatización</title>
+    <meta name="description" content="OptimoTech revoluciona la productividad con IA y automatización. Optimiza procesos, reduce costos y mejora la eficiencia de tu empresa.">
+    <meta name="keywords" content="Inteligencia Artificial, Automatización, Chatbots, Optimización de procesos, IA para empresas">
+    <meta name="author" content="OptimoTech">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://imgur.com/N1xwixs.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #0d0d0d;
+            color: #ffffff;
+        }
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background: linear-gradient(135deg, #f4f4f4, #ffffff);
+            padding: 20px 0;
+            text-align: center;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+        }
+        .language-selector a {
+            color: #ffcc70;
+            margin: 0 10px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .language-selector a:hover {
+            color: #E39132;
+        }
+        header img.logo {
+            max-width: 180px;
+            display: block;
+            margin: 0 auto;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+        }
+        nav ul li a {
+            color: #ffcc70;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #E39132;
+        }
+        #hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #D85F2A, #E39132);
+            text-align: center;
+            padding: 0 20px;
+        }
+        .cta-button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #000000;
+            background: #ffcc70;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            background: #E39132;
+            transform: scale(1.1);
+        }
+        #video-section {
+            text-align: center;
+            padding: 50px 20px;
+            background: #1e1e1e;
+        }
+        #video-section iframe {
+            max-width: 800px;
+            width: 100%;
+            height: 450px;
+            border-radius: 10px;
+        }
+        #faq ul {
+            text-align: left;
+            max-width: 800px;
+            margin: auto;
+        }
+        #faq ul li {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        footer {
+            background: #000000;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,32 +127,29 @@
             <a href="index_en.html">EN</a> | 
             <a href="index_es.html">ES</a>
         </div>
-        <img src="OptimoTech_logo_website.png" alt="OptimoTech Logo">
+        <img src="https://imgur.com/N1xwixs.png" alt="OptimoTech Logo" class="logo">
         <nav>
             <ul>
                 <li><a href="#services">Servicios</a></li>
                 <li><a href="#about">Sobre Nosotros</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="https://forms.gle/votreGoogleForm" target="_blank">Contacto</a></li>
             </ul>
         </nav>
     </header>
-
+    
     <section id="hero">
         <h2>Revoluciona tu productividad con IA</h2>
-        <p>Soluciones de automatización personalizadas para optimizar tu rendimiento.</p>
-        <a href="#contact" class="cta-button">Trabajemos juntos</a>
+        <p>+30% de eficiencia con nuestras soluciones de automatización</p>
+        <a href="https://forms.gle/votreGoogleForm" class="cta-button" target="_blank">Trabajemos juntos</a>
     </section>
-
-    <section id="services">
-        <h2>Nuestros Servicios</h2>
-        <ul>
-            <li>🚀 Automatización de procesos</li>
-            <li>🤖 Integración de inteligencia artificial</li>
-            <li>💬 Chatbots y asistentes virtuales</li>
-            <li>📊 Optimización y análisis de datos</li>
-        </ul>
+    
+    <section id="video-section">
+        <h2>💡 Descubre cómo funciona OptimoTech</h2>
+        <p>Explora nuestras soluciones en acción con esta breve demostración.</p>
+        <iframe src="https://www.youtube.com/embed/tu_video_demo" allowfullscreen></iframe>
     </section>
-
+    
     <footer>
         <p>&copy; 2025 OptimoTech. Todos los derechos reservados.</p>
     </footer>
