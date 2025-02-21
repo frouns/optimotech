@@ -13,7 +13,7 @@
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
-            background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+            background: linear-gradient(to bottom, #ffffff, #e6e6e6);
             color: #1e1e1e;
             margin: 0;
             padding: 0;
@@ -22,155 +22,62 @@
             align-items: center;
             overflow-x: hidden;
         }
-        header {
-            width: 100%;
-            background: white;
-            padding: 15px 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .logo img {
-            height: 140px;
-            margin-bottom: -10px;
-        }
-        .language-selector {
-            display: flex;
-            gap: 10px;
-            margin-top: 5px;
-        }
-        .language-selector a {
-            text-decoration: none;
-            color: #D85F2A;
-            font-weight: bold;
-            font-size: 14px;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-        .language-selector a:hover {
-            background: #D85F2A;
-            color: white;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 15px;
-            padding: 0;
-            margin: 15px 0 0 0;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #D85F2A;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        nav ul li a:hover {
-            color: #E39132;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 30px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(90deg, #D85F2A, #E39132);
-            color: white;
-            padding: 12px 25px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: 0.3s;
-        }
-        .cta-button:hover {
-            background: linear-gradient(90deg, #E39132, #D85F2A);
-        }
-        .stats-section {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 16px;
-            font-weight: bold;
-            color: #D85F2A;
-        }
-        .testimonial {
-            margin-top: 30px;
-            font-style: italic;
-            font-size: 16px;
-            color: #555;
-        }
-        footer {
-            background: #1e1e1e;
-            color: white;
-            text-align: center;
-            padding: 15px;
+        .faq {
             margin-top: 40px;
+            padding: 20px;
+            background: #f5f5f5;
+            border-radius: 10px;
+            text-align: left;
+            max-width: 800px;
             width: 100%;
         }
-        .social-icons {
-            margin-top: 10px;
+        .faq h3 {
+            color: #D85F2A;
+            cursor: pointer;
+            padding: 15px;
+            border-bottom: 1px solid #ccc;
+            margin: 0;
+            transition: background 0.3s ease;
         }
-        .social-icons a {
-            color: white;
-            margin: 0 10px;
-            font-size: 20px;
-            text-decoration: none;
+        .faq h3:hover {
+            background: #ececec;
         }
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 1s ease-out, transform 1s ease-out;
+        .faq p {
+            display: none;
+            padding: 15px;
+            margin: 0;
+            border-bottom: 1px solid #ddd;
         }
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
+        .faq h3.active + p {
+            display: block;
         }
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            document.querySelectorAll(".fade-in").forEach(element => {
-                element.classList.add("visible");
+            document.querySelectorAll(".faq h3").forEach(question => {
+                question.addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    let answer = this.nextElementSibling;
+                    if (answer.style.display === "block") {
+                        answer.style.display = "none";
+                    } else {
+                        document.querySelectorAll(".faq p").forEach(p => p.style.display = "none");
+                        answer.style.display = "block";
+                    }
+                });
             });
         });
     </script>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="https://imgur.com/N1xwixs.png" alt="OptimoTech Logo">
-        </div>
-        <div class="language-selector">
-            <a href="index_fr.html">FR</a>
-            <a href="index_en.html">EN</a>
-            <a href="index_es.html">ES</a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index_fr.html">Accueil</a></li>
-                <li><a href="services_fr.html">Services</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="https://forms.gle/WA5nqhjXoYXaMB4r5" target="_blank">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
     <div class="container fade-in">
-        <h2>Boostez votre productivité avec l'IA</h2>
-        <p>Découvrez comment nos solutions d'automatisation et d'intelligence artificielle peuvent optimiser votre entreprise.</p>
-        <a href="#services" class="cta-button">Découvrir les services</a>
-        <p class="stats-section">+30% de productivité | Réduction des coûts de 40% | +500 entreprises accompagnées</p>
-        <p class="testimonial">⭐️⭐️⭐️⭐️⭐️ "Grâce à OptimoTech, nous avons réduit nos coûts et amélioré notre efficacité de 30%."</p>
+        <section id="faq" class="faq">
+            <h2>FAQ</h2>
+            <h3>Quels types d'entreprises peuvent bénéficier de l'automatisation ?</h3>
+            <p>Toutes les entreprises, de la startup aux grandes entreprises, peuvent améliorer leur productivité avec nos solutions.</p>
+            <h3>Combien de temps prend la mise en place ?</h3>
+            <p>Nos solutions sont généralement déployées en quelques jours à quelques semaines, selon la complexité du projet.</p>
+        </section>
     </div>
-    
-    <footer>
-        <p>&copy; 2025 OptimoTech. Tous droits réservés.</p>
-    </footer>
 </body>
 </html>
