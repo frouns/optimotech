@@ -7,6 +7,23 @@
     <meta name="description" content="OptimoTech revolutionizes productivity with AI and automation. Optimize workflows, reduce costs, and enhance efficiency.">
     <meta name="keywords" content="Artificial Intelligence, Automation, Chatbots, Process Optimization, AI for businesses">
     <meta name="author" content="OptimoTech">
+    <meta property="og:title" content="OptimoTech - AI & Automation">
+    <meta property="og:description" content="Discover how AI can optimize your business with OptimoTech. Advanced automation and productivity solutions.">
+    <meta property="og:image" content="https://imgur.com/N1xwixs.png">
+    <meta property="og:url" content="https://optimotech.net">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "OptimoTech",
+        "url": "https://optimotech.net",
+        "logo": "https://imgur.com/N1xwixs.png",
+        "sameAs": [
+            "https://linkedin.com/company/optimotech",
+            "https://twitter.com/optimotech"
+        ]
+    }
+    </script>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://imgur.com/N1xwixs.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
@@ -22,7 +39,7 @@
         <nav>
             <ul>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="https://forms.gle/votreGoogleForm" target="_blank">Contact</a></li>
             </ul>
@@ -41,8 +58,39 @@
         <iframe src="https://www.youtube.com/embed/tu_video_demo" allowfullscreen></iframe>
     </section>
     
+    <section id="testimonials">
+        <h2>💬 What Our Clients Say</h2>
+        <div class="testimonial-slider">
+            <p>⭐️⭐️⭐️⭐️⭐️ "OptimoTech saved us 12 hours per week and increased our sales by 25%."</p>
+            <p>⭐️⭐️⭐️⭐️⭐️ "Our customer service is now 3x faster thanks to OptimoTech's AI."</p>
+        </div>
+    </section>
+    
+    <section id="faq">
+        <h2>❓ Frequently Asked Questions</h2>
+        <ul>
+            <li><strong>How can AI improve my business?</strong><br>AI optimizes processes, reduces costs, and enhances operational efficiency.</li>
+            <li><strong>Does OptimoTech integrate with my existing tools?</strong><br>Yes, our solutions are compatible with platforms like Salesforce, Zapier, HubSpot, and more.</li>
+            <li><strong>How long does it take to implement an AI solution?</strong><br>Depending on the case, implementation can take anywhere from a few days to a few weeks.</li>
+        </ul>
+    </section>
+    
     <footer>
         <p>&copy; 2025 OptimoTech. All rights reserved.</p>
     </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const testimonials = document.querySelectorAll(".testimonial-slider p");
+            let index = 0;
+            function rotateTestimonials() {
+                testimonials.forEach(t => t.style.display = "none");
+                testimonials[index].style.display = "block";
+                index = (index + 1) % testimonials.length;
+            }
+            rotateTestimonials();
+            setInterval(rotateTestimonials, 5000);
+        });
+    </script>
 </body>
 </html>
