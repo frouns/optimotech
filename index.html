@@ -4,93 +4,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OptimoTech - IA & Automatisation</title>
-    <meta name="description" content="OptimoTech révolutionne la productivité grâce à l'IA et l'automatisation. Optimisez vos processus, réduisez vos coûts et améliorez votre efficacité.">
-    <meta name="keywords" content="Intelligence Artificielle, Automatisation, Chatbots, Optimisation des processus, IA pour entreprises">
+    <meta name="description" content="Découvrez comment OptimoTech peut révolutionner votre entreprise avec l'automatisation et l'intelligence artificielle.">
+    <meta name="keywords" content="Intelligence Artificielle, Automatisation, Chatbots, Productivité, OptimoTech">
     <meta name="author" content="OptimoTech">
-    <meta property="og:title" content="OptimoTech - IA & Automatisation">
-    <meta property="og:description" content="Découvrez comment l'IA peut optimiser votre entreprise avec OptimoTech. Solutions avancées d'automatisation et de productivité.">
-    <meta property="og:image" content="https://imgur.com/N1xwixs.png">
-    <meta property="og:url" content="https://optimotech.net">
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "OptimoTech",
-        "url": "https://optimotech.net",
-        "logo": "https://imgur.com/N1xwixs.png",
-        "sameAs": [
-            "https://linkedin.com/company/optimotech",
-            "https://twitter.com/optimotech"
-        ]
-    }
-    </script>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://imgur.com/N1xwixs.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+            color: #1e1e1e;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+        header {
+            width: 100%;
+            background: white;
+            padding: 15px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .logo img {
+            height: 140px;
+            margin-bottom: -10px;
+        }
+        .language-selector {
+            display: flex;
+            gap: 10px;
+            margin-top: 5px;
+        }
+        .language-selector a {
+            text-decoration: none;
+            color: #D85F2A;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .language-selector a:hover {
+            background: #D85F2A;
+            color: white;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+            margin: 15px 0 0 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #D85F2A;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: #E39132;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(90deg, #D85F2A, #E39132);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .cta-button:hover {
+            background: linear-gradient(90deg, #E39132, #D85F2A);
+        }
+        .stats-section {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #D85F2A;
+        }
+        .testimonial {
+            margin-top: 30px;
+            font-style: italic;
+            font-size: 16px;
+            color: #555;
+        }
+        footer {
+            background: #1e1e1e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            width: 100%;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".fade-in").forEach(element => {
+                element.classList.add("visible");
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
+        <div class="logo">
+            <img src="https://imgur.com/N1xwixs.png" alt="OptimoTech Logo">
+        </div>
         <div class="language-selector">
-            <a href="index.html">FR</a> | 
-            <a href="index_en.html">EN</a> | 
+            <a href="index_fr.html">FR</a>
+            <a href="index_en.html">EN</a>
             <a href="index_es.html">ES</a>
         </div>
-        <img src="https://imgur.com/N1xwixs.png" alt="OptimoTech Logo" class="logo">
         <nav>
             <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="https://forms.gle/votreGoogleForm" target="_blank">Contact</a></li>
+                <li><a href="index_fr.html">Accueil</a></li>
+                <li><a href="services_fr.html">Services</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="https://forms.gle/WA5nqhjXoYXaMB4r5" target="_blank">Contact</a></li>
             </ul>
         </nav>
     </header>
     
-    <section id="hero">
-        <h2>Révolutionnez votre productivité avec l'IA</h2>
-        <p>+30% d'efficacité avec nos solutions d'automatisation</p>
-        <a href="https://forms.gle/votreGoogleForm" class="cta-button" target="_blank">Travaillons ensemble</a>
-    </section>
-    
-    <section id="video-section">
-        <h2>💡 Découvrez comment fonctionne OptimoTech</h2>
-        <p>Explorez nos solutions en action avec cette démonstration.</p>
-        <iframe src="https://www.youtube.com/embed/tu_video_demo" allowfullscreen></iframe>
-    </section>
-    
-    <section id="testimonials">
-        <h2>💬 Ce que disent nos clients</h2>
-        <div class="testimonial-slider">
-            <p>⭐️⭐️⭐️⭐️⭐️ "OptimoTech nous a fait gagner 12h de travail par semaine et a augmenté nos ventes de 25%."</p>
-            <p>⭐️⭐️⭐️⭐️⭐️ "Notre service client est 3 fois plus rapide grâce à l'IA d'OptimoTech."</p>
-        </div>
-    </section>
-    
-    <section id="faq">
-        <h2>❓ Questions Fréquentes</h2>
-        <ul>
-            <li><strong>Comment l'IA peut-elle améliorer mon entreprise ?</strong><br>L'IA optimise les processus, réduit les coûts et améliore l'efficacité opérationnelle.</li>
-            <li><strong>OptimoTech s'intègre-t-il avec mes outils actuels ?</strong><br>Oui, nos solutions sont compatibles avec des outils comme Salesforce, Zapier, HubSpot et plus encore.</li>
-            <li><strong>Combien de temps faut-il pour mettre en place une solution IA ?</strong><br>Selon le cas, l'implémentation peut prendre de quelques jours à quelques semaines.</li>
-        </ul>
-    </section>
+    <div class="container fade-in">
+        <h2>Boostez votre productivité avec l'IA</h2>
+        <p>Découvrez comment nos solutions d'automatisation et d'intelligence artificielle peuvent optimiser votre entreprise.</p>
+        <a href="#services" class="cta-button">Découvrir les services</a>
+        <p class="stats-section">+30% de productivité | Réduction des coûts de 40% | +500 entreprises accompagnées</p>
+        <p class="testimonial">⭐️⭐️⭐️⭐️⭐️ "Grâce à OptimoTech, nous avons réduit nos coûts et amélioré notre efficacité de 30%."</p>
+    </div>
     
     <footer>
         <p>&copy; 2025 OptimoTech. Tous droits réservés.</p>
     </footer>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const testimonials = document.querySelectorAll(".testimonial-slider p");
-            let index = 0;
-            function rotateTestimonials() {
-                testimonials.forEach(t => t.style.display = "none");
-                testimonials[index].style.display = "block";
-                index = (index + 1) % testimonials.length;
-            }
-            rotateTestimonials();
-            setInterval(rotateTestimonials, 5000);
-        });
-    </script>
 </body>
 </html>
