@@ -7,6 +7,23 @@
     <meta name="description" content="OptimoTech révolutionne la productivité grâce à l'IA et l'automatisation. Optimisez vos processus, réduisez vos coûts et améliorez votre efficacité.">
     <meta name="keywords" content="Intelligence Artificielle, Automatisation, Chatbots, Optimisation des processus, IA pour entreprises">
     <meta name="author" content="OptimoTech">
+    <meta property="og:title" content="OptimoTech - IA & Automatisation">
+    <meta property="og:description" content="Découvrez comment l'IA peut optimiser votre entreprise avec OptimoTech. Solutions avancées d'automatisation et de productivité.">
+    <meta property="og:image" content="https://imgur.com/N1xwixs.png">
+    <meta property="og:url" content="https://optimotech.net">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "OptimoTech",
+        "url": "https://optimotech.net",
+        "logo": "https://imgur.com/N1xwixs.png",
+        "sameAs": [
+            "https://linkedin.com/company/optimotech",
+            "https://twitter.com/optimotech"
+        ]
+    }
+    </script>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://imgur.com/N1xwixs.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
@@ -41,8 +58,39 @@
         <iframe src="https://www.youtube.com/embed/tu_video_demo" allowfullscreen></iframe>
     </section>
     
+    <section id="testimonials">
+        <h2>💬 Ce que disent nos clients</h2>
+        <div class="testimonial-slider">
+            <p>⭐️⭐️⭐️⭐️⭐️ "OptimoTech nous a fait gagner 12h de travail par semaine et a augmenté nos ventes de 25%."</p>
+            <p>⭐️⭐️⭐️⭐️⭐️ "Notre service client est 3 fois plus rapide grâce à l'IA d'OptimoTech."</p>
+        </div>
+    </section>
+    
+    <section id="faq">
+        <h2>❓ Questions Fréquentes</h2>
+        <ul>
+            <li><strong>Comment l'IA peut-elle améliorer mon entreprise ?</strong><br>L'IA optimise les processus, réduit les coûts et améliore l'efficacité opérationnelle.</li>
+            <li><strong>OptimoTech s'intègre-t-il avec mes outils actuels ?</strong><br>Oui, nos solutions sont compatibles avec des outils comme Salesforce, Zapier, HubSpot et plus encore.</li>
+            <li><strong>Combien de temps faut-il pour mettre en place une solution IA ?</strong><br>Selon le cas, l'implémentation peut prendre de quelques jours à quelques semaines.</li>
+        </ul>
+    </section>
+    
     <footer>
         <p>&copy; 2025 OptimoTech. Tous droits réservés.</p>
     </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const testimonials = document.querySelectorAll(".testimonial-slider p");
+            let index = 0;
+            function rotateTestimonials() {
+                testimonials.forEach(t => t.style.display = "none");
+                testimonials[index].style.display = "block";
+                index = (index + 1) % testimonials.length;
+            }
+            rotateTestimonials();
+            setInterval(rotateTestimonials, 5000);
+        });
+    </script>
 </body>
 </html>
